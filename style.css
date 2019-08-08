@@ -1,97 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-header {
-}
-body {
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(background.png);
-    background-repeat: repeat;
-    height: 100vh;
-    background-size: 400px;
+.main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(background.png);
+  background-repeat: repeat;
+  height: 100vh;
+  background-size: 400px;
 }
 .main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 30px;
+  float: right;
+  list-style: none;
+  margin-top: 30px;
 }
 .main-nav li {
-    display: inline-block;
+  display: inline-block;
 }
 .main-nav li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 .main-nav li.active a {
-    border: 1px solid white;
+  border: 1px solid white;
 }
 .main-nav li a:hover {
-    border: 1px solid white;
+  border: 1px solid white;
 }
 .monad-definition {
-    color:white;
-    text-decoration: none;
-    padding: 5px 20px;
-    font-family: "Roboto", sans-setif;
-    font-size: 15px;
-    text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: "Roboto", sans-setif;
+  font-size: 15px;
 }
 .pepeLaugh {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .logo img {
-    width: 150px;
-    height: auto;
-    float: left;
+  width: 150px;
+  height: auto;
 }
 body {
-    font-family: monospace;
+  font-family: monospace;
 }
 .row {
-    max-width: 1200px;
-    margin-top: 50px;
-    margin: auto;
+  max-width: 1200px;
+  margin-top: 50px;
+  margin: auto;
 }
-.hero {
-    text-align: center;
+.page {
+  text-align: center;
+  margin-top: 0px;
 }
-h1{
-    color:white;
-    text-transform: uppercase;
-    font-size: 70p;
-    text-align: center;
-    margin-top: 275px;
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 70p;
 }
 .button {
-    margin-top: 30px;
-    margin-left: 440px;
+  margin-top: 30px;
+  margin-left: 440px;
 }
 .btn {
-    border: 1px solid white;
-    padding: 10px 30px;
-    color: white;
-    text-decoration: none;
-    margin-right: 5px;
-    font-size: 13px;
-    text-transform: uppercase;
+  border: 1px solid white;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 .btn-one {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .btn-one:hover {
-    background-color: darkorange;
-    transition: all 0.5s ease-in;
+  background-color: darkorange;
+  transition: all 0.5s ease-in;
 }
 .btn-two {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .btn-two:hover {
-    background-color: darkorange;
-    transition: all 0.5s ease-in;
+  background-color: darkorange;
+  transition: all 0.5s ease-in;
 }
