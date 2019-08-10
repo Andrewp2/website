@@ -85,14 +85,15 @@ li.chess img {
     padding: 15px 15px;
 }
 .boxOfText {
+    justify-content: space-between;
     padding: 15px 15px;
     display: flex;
     background-color: rgba(120,120,120,0.5);
     margin: 15px 15px;
     flex-direction: column;
 }
-.boxOfText.chessBox {
-    text-align: right;
+.boxOfText.p {
+    flex-grow: 1;
 }
 footer {
     position: fixed;
