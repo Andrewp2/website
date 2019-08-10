@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="My personal portfolio page">
     <title>Andrew Peterson</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <div class="main">
-    <div class="header">
+  <body>
+    <header>
       <div class="row">
         <div class="logo">
           <img src="logo.png" />
         </div>
-        <ul class="main-nav">
-          <li class="active"><a href=""> HOME </a></li>
-          <li class=""><a href=""> DEMOS </a></li>
-        </ul>
+        <div class="main-nav">
+          <ol>
+            <li><a href="index.html"> HOME </a></li>
+            <li><a href="demos.html"> DEMOS </a></li>
+            <li><a href="blog.html"> BLOG </a></li>
+          </ol>
+        </div>
       </div>
-    </div>
-    <div class="page">
-      <h1>Are you ready?</h1>
+    </header>
+    
+      <h1>Welcome to my personal website</h1>
       <div class="button">
-        <a href="https://www.youtube.com/watch?v=FqzeNF2_eak" class="btn btn-one"> Watch Video</a>
-        <a href="https://www.youtube.com/watch?v=VyEvZw1rtYs" class="btn btn-two"> Explore More</a>
+        <a href="https://www.youtube.com/watch?v=FqzeNF2_eak" target="_blank" class="btn" id="btn-one"> Watch Video</a>
+        <a href="https://www.youtube.com/watch?v=VyEvZw1rtYs" target="_blank" class="btn" id="btn-two"> Explore More</a>
       </div>
-      <div class="monad-definition">
+      <div id="monad-definition">
         <p>
-          A MONAD IS JUST A MONOID IN THE CATEGORY OF ENDOFUNCTORS, WHATS THE
-          PROBLEM?
+          A Monad is just a Monoid in the category of endofunctors, <br>what's the problem?
         </p>
       </div>
-      <div class="pepeLaugh">
-        <img src="pepelaughz.jpg" />
+      <div id="pepeLaugh">
+        <img src="pepelaugh.png" alt="pepeLaugh" />
       </div>
-    </div>
-  </div>
+  </body>
 </html>
