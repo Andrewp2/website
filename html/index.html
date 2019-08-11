@@ -4,18 +4,23 @@
     <meta charset="utf-8" />
     <meta name="description" content="My personal portfolio page" />
     <title>Andrew Peterson</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
       <div class="row">
         <div class="logo">
-          <img src="logo.png" />
+          <img src="../img/logo.png" />
         </div>
         <div class="main-nav">
           <ol>
             <li><a href="index.html"> HOME </a></li>
-            <li><a href="demos.html"> DEMOS </a></li>
+            <li class="dropdown">
+              DEMOS
+              <ol class="dropdown-content">
+                <a href="chat.html"> CHAT </a>
+              </ol>
+            </li>
             <li><a href="blog.html"> BLOG </a></li>
           </ol>
         </div>
@@ -29,14 +34,14 @@
           <h2>Who Am I?</h2>
           <p>
             I'm a software engineering major at Iowa State University. I am a
-            senior, and expect to graduate in May 2020. Last summer (Summer of 2019)
-            I did an internship at Cerner, where I worked on a code generation utility
-            for the pharmacy outpatient team. In my free time I like
-            to play video games like Dota 2, learn more about computer science,
-            and do software projects to broaden my horizons.
+            senior, and expect to graduate in May 2020. Last summer (Summer of
+            2019) I did an internship at Cerner, where I worked on a code
+            generation utility for the pharmacy outpatient team. In my free time
+            I like to play video games like Dota 2, learn more about computer
+            science, and do software projects to broaden my horizons.
           </p>
         </div>
-        <img src="profile2.png" alt="Andrew Peterson's face" />
+        <img src="../img/profile2.png" alt="Andrew Peterson's face" />
       </li>
       <li class="machineLearningWebsite">
         <div class="boxOfText machineLearning">
@@ -48,7 +53,7 @@
             uploaded image.
           </p>
         </div>
-        <img src="styledImage.png" alt="Mixture of houses and starry night" />
+        <img src="../img/styledImage.png" alt="Mixture of houses and starry night" />
       </li>
       <li class="dungeonCrawler">
         <div class="boxOfText dungeonText">
@@ -62,7 +67,7 @@
             to make it as deep as you can.
           </p>
         </div>
-        <img src="dungeonCrawler.png" alt="Dungeon crawler program" />
+        <img src="../img/dungeonCrawler.png" alt="Dungeon crawler program" />
       </li>
       <li class="chess">
         <div class="boxOfText chessBox">
@@ -75,7 +80,7 @@
             thousand lines, and it was built in only a couple of weeks.
           </p>
         </div>
-        <img src="chess.png" alt="chess program" />
+        <img src="../img/chess.png" alt="chess program" />
       </li>
     </ol>
     <footer>

@@ -4,7 +4,7 @@
 }
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(background2.png);
+    url(../img/background2.png);
   background-size: 400px;
   color: white;
   font-family: "Roboto", monospace;
@@ -58,6 +58,29 @@ p {
 }
 .main-nav a:hover {
   border: 1px solid white;
+}
+.dropdown {
+  border: solid white 1px;
+    position: relative;
+    display:inline-block;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    margin-top: 15px;
+}
+.dropdown-content:hover {
+  border: solid white 1px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content a {
+  border: solid white 1px;
+    display:block;
 }
 .button {
   display: flex;
