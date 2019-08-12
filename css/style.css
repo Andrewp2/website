@@ -33,64 +33,45 @@ p {
 .row {
   display: flex;
 }
-.row div:last-child {
+nav {
   margin-left: auto;
-}
-.main-nav {
   margin-right: 15px;
 }
-.main-nav ol {
+nav ol {
   display: flex;
   flex-direction: row;
 }
-.main-nav li {
-  float: left;
-  list-style: none;
-}
-.main-nav a {
-  text-decoration: none;
+nav ol li {
+  background-color: rgba(60, 60, 60, 0.9);
   display: inline-block;
-  color: white;
   padding: 5px 20px;
   text-align: center;
   border: 1px solid transparent;
-  margin-top: 15px;
+  margin: 15px 15px 15px 15px;
+  position: relative;
 }
-.main-nav a:hover {
+nav ol li:hover {
   border: 1px solid white;
 }
-.dropdown {
-  border: solid white 1px;
-    position: relative;
-    display:inline-block;
-    color: white;
-    padding: 5px 20px;
-    text-align: center;
-    border: 1px solid transparent;
-    margin-top: 15px;
+nav ol li a {
+  text-decoration: none;
+  color: white;
 }
-.dropdown-content:hover {
-  border: solid white 1px;
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    padding: 12px 16px;
-    z-index: 1;
+nav ol li ol {
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  display: none;
 }
-
-.dropdown:hover .dropdown-content a {
-  border: solid white 1px;
-    display:block;
+nav ol li:hover ol {
+  display: block;
 }
-.button {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+nav ol li ol li {
+  margin: 0px 0px 0px 0px;
 }
 ol {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
 }
 li {
   align-items: stretch;
