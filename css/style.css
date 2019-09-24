@@ -72,6 +72,7 @@ nav ol li ol li {
 ol {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 li {
   align-items: stretch;
