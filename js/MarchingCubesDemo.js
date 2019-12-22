@@ -1,4 +1,4 @@
-const chunkGridSize = 1;
+const chunkGridSize = 3;
 const chunkGridSize2 = chunkGridSize * chunkGridSize;
 const resolution = 50;
 
@@ -17,7 +17,7 @@ function main() {
     75,
     ourCanvas.clientWidth / ourCanvas.clientHeight,
     0.1,
-    10000
+    100000
   );
   camera.position.set(2000, 2000 * chunkGridSize, 2000);
   camera.lookAt(0, 0, 0);
