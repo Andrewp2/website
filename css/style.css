@@ -44,7 +44,6 @@ nav ol {
 nav ol li {
   background-color: rgba(60, 60, 60, 0.9);
   display: inline-block;
-  padding: 5px 20px;
   text-align: center;
   border: 1px solid transparent;
   margin: 15px 15px 15px 15px;
@@ -56,6 +55,11 @@ nav ol li:hover {
 nav ol li a {
   text-decoration: none;
   color: white;
+  padding: 5px 20px;
+}
+
+a.wide {
+  display:block;
 }
 nav ol li ol {
   position: absolute;
