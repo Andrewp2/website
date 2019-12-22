@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Maze</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="../img/profile2.png" />
+		<style>
+			canvas {
+				padding-left: 0;
+				padding-right: 0;
+				margin-left: auto;
+				margin-right: auto;
+				display: block; 
+				width: 900px; height: 600px 
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="row">
+			  <div class="logo">
+				<img src="../img/logo.png" />
+			  </div>
+			  <nav>
+				<ol>
+				  <li><a class="wide" href="index.html"> HOME </a></li>
+				  <li>
+					<a class="wide" href="">DEMOS</a>
+					<ol>
+					  <li>
+						<a class="wide" href="MarchingCubesDemo.html"> Marching Cubes Demo </a>
+					  </li>
+					</ol>
+				  </li>
+				  <li><a class="wide" href="internship.html">INTERNSHIP</a></li>
+				</ol>
+			  </nav>
+			</div>
+		  </header>
+		<canvas id="theCanvas" width="600" height="600">Please use a browser that supports "canvas"</canvas>
+        <script src="../js/three.min.js"></script>
+        <script src="../js/Maze.js"></script>
+        <script src="../js/OrbitControls.js"></script>
+		<script>window.onload = main</script>
+	</body>
+</html>

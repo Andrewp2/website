@@ -3,7 +3,7 @@ const chunkGridSize2 = chunkGridSize * chunkGridSize;
 const resolution = 50;
 
 function main() {
-  var scene = new THREE.Scene();
+  const scene = new THREE.Scene();
   const ourCanvas = document.getElementById("theCanvas");
 
   const renderer = new THREE.WebGLRenderer({ canvas: ourCanvas });
@@ -37,7 +37,7 @@ function main() {
     resolution * chunkGridSize,
     resolution * chunkGridSize
   );
-  var chunks = [];
+  const chunks = [];
 
   const chunkScale = 2000;
 
@@ -49,7 +49,12 @@ function main() {
         shininess: 2,
         vertexColors: THREE.VertexColors
       });
-      const chunk = new THREE.MarchingCubes(resolution, chunkMaterial, false, true);
+      const chunk = new THREE.MarchingCubes(
+        resolution,
+        chunkMaterial,
+        false,
+        true
+      );
       chunk.position.set(
         chunkScale * (i * 2) * ((resolution - 3) / resolution),
         0,
@@ -61,7 +66,7 @@ function main() {
     }
   }
 
-  var controls = new THREE.OrbitControls(camera, renderer.domElement);
+  const controls = new THREE.OrbitControls(camera, renderer.domElement);
   //controls.update();
   loop(chunks, heightMap, scene, camera, renderer);
 }
@@ -72,8 +77,8 @@ function loop(chunks, heightMap, scene, camera, renderer) {
   }
   updateCubes(chunks, heightMap);
   renderer.render(scene, camera);
-  window.requestAnimationFrame( function() {
-    loop(chunks, heightMap, scene, camera, renderer); 
+  window.requestAnimationFrame(function() {
+    loop(chunks, heightMap, scene, camera, renderer);
   });
 }
 
