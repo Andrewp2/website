@@ -1,9 +1,12 @@
 const size = 41;
 const numRows = size;
 const numCols = size;
+var maze;
+var walls;
+let scene;
 
 function main() {
-  const scene = new THREE.Scene();
+  scene = new THREE.Scene();
   const ourCanvas = document.getElementById("theCanvas");
 
   const renderer = new THREE.WebGLRenderer({ canvas: ourCanvas });
@@ -35,15 +38,35 @@ function main() {
 
   const controls = new THREE.OrbitControls(camera, renderer.domElement);
 
-  const maze = generateMaze();
+  regenerateMaze();
+  const floorGeometry = new THREE.BoxBufferGeometry(1,1,1);
+  const floorMaterial = new THREE.MeshPhongMaterial({ color: 0x111111, emissive: 0x000000, specular: 0x333333, shininess: 30 });
+  const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+  floorMesh.scale.set((maze.length), 1, (maze[0].length));
+  floorMesh.position.set(0,0, 0);
+  scene.add(floorMesh);
+
+  loop(scene, camera, renderer);
+}
+
+function regenerateMaze() {
+  if(walls) {
+    for(let i = 0; i < walls.length; i++) {
+      scene.remove(walls[i]);
+      walls[i].geometry.dispose();
+      walls[i].material.dispose();
+      walls[i] = undefined;
+    }
+  }
+  walls = [];
+  maze = generateMaze();
   for (let row = 0; row < maze.length; row++) {
     for (let col = 0; col < maze[row].length; col++) {
       if (!maze[row][col]) {
-        createCube(row, col, scene);
+        walls.push(createCube(row, col, scene));
       }
     }
   }
-  loop(scene, camera, renderer);
 }
 
 function generateMaze() {
@@ -106,10 +129,11 @@ function getIndex(position, maze) {
 
 function createCube(row, col, scene) {
   const geometry = new THREE.BoxBufferGeometry(1, 1, 1);
-  const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
+  const material = new THREE.MeshPhongMaterial({ color: 0x777777, emissive: 0x000000, specular: 0x333333, shininess: 30 });
   const mesh = new THREE.Mesh(geometry, material);
-  mesh.position.set(row-(size/2), 1, col-(size/2));
+  mesh.position.set(row-(size/2)+.5, 1, col-(size/2)+.5);
   scene.add(mesh);
+  return mesh;
 }
 
 function loop(scene, camera, renderer) {

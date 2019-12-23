@@ -9,11 +9,19 @@
       canvas {
         padding-left: 0;
         padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin-bottom: 50px;
+        margin: auto;
         display: block;
-        width: 900px;
-        height: 600px;
+        width: 1200px;
+        height: 550px;
+      }
+      .wrapper {
+        text-align: center;
+        padding-bottom: 5px;
+      }
+      .button {
+        position: absolute;
+        top: 50%;
       }
     </style>
     <script src="../js/three.min.js"></script>
@@ -48,6 +56,10 @@
           </nav>
         </div>
       </header>
+      <h1>Try clicking and dragging to look around!</h1>
+      <div class="wrapper">
+        <input type="button" value="Generate a new maze" onclick="regenerateMaze()">
+      </div>
     <canvas id="theCanvas" width="600" height="600"
       >Please use a browser that supports "canvas"</canvas
     >

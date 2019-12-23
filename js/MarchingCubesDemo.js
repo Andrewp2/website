@@ -1,6 +1,7 @@
 const chunkGridSize = 3;
 const chunkGridSize2 = chunkGridSize * chunkGridSize;
 const resolution = 50;
+let heightMap;
 
 function main() {
   const scene = new THREE.Scene();
@@ -33,7 +34,7 @@ function main() {
   const ambientLight = new THREE.AmbientLight(0x080808);
   scene.add(ambientLight);
 
-  let heightMap = generateHeight(
+  heightMap = generateHeight(
     resolution * chunkGridSize,
     resolution * chunkGridSize
   );
@@ -68,17 +69,24 @@ function main() {
 
   const controls = new THREE.OrbitControls(camera, renderer.domElement);
   //controls.update();
-  loop(chunks, heightMap, scene, camera, renderer);
+  loop(chunks, scene, camera, renderer);
 }
 
-function loop(chunks, heightMap, scene, camera, renderer) {
+function generateNewTerrain() {
+  heightMap = generateHeight(
+    resolution * chunkGridSize,
+    resolution * chunkGridSize
+  );
+}
+
+function loop(chunks, scene, camera, renderer) {
   for (let m = 0; m < chunks.length; m++) {
     chunks[m].init(resolution);
   }
   updateCubes(chunks, heightMap);
   renderer.render(scene, camera);
   window.requestAnimationFrame(function() {
-    loop(chunks, heightMap, scene, camera, renderer);
+    loop(chunks, scene, camera, renderer);
   });
 }
 
