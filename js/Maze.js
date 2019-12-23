@@ -1,5 +1,6 @@
-const numRows = 20;
-const numCols = 20;
+const size = 41;
+const numRows = size;
+const numCols = size;
 
 function main() {
   const scene = new THREE.Scene();
@@ -35,9 +36,10 @@ function main() {
   const controls = new THREE.OrbitControls(camera, renderer.domElement);
 
   const maze = generateMaze();
+  console.log(maze);
   for (let row = 0; row < maze.length; row++) {
     for (let col = 0; col < maze[row].length; col++) {
-      if (maze[row][col] === 1) {
+      if (!maze[row][col]) {
         createCube(row, col, scene);
       }
     }
@@ -47,18 +49,78 @@ function main() {
 
 function generateMaze() {
   const maze = [];
-  for(let row = 0; row < numRows; row++) {
+  for (let row = 0; row < numRows; row++) {
     maze.push([]);
-    for(let col = 0; col < numCols; col++) {
+    for (let col = 0; col < numCols; col++) {
       maze[row].push(0);
     }
   }
-  const currentPos = {x:0, y:0};
+  const originalPosition = { row: 1, col: 1 };
   var stack = [];
+  var visited = new Set();
+  stack.push(originalPosition);
+  visited.add(getIndex(originalPosition, maze));
+  while (stack.length !== 0) {
+    const current = stack.pop();
+    maze[current.row][current.col] = 1;
+    const options = [];
+    if (
+      current.row > 1 &&
+      !visited.has(getIndex({ row: current.row - 2, col: current.col }, maze))
+    ) {
+      options.push({ row: current.row - 2, col: current.col });
+    }
+    if (
+      current.col > 1 &&
+      !visited.has(getIndex({ row: current.row, col: current.col - 2 }, maze))
+    ) {
+      options.push({ row: current.row, col: current.col - 2 });
+    }
+    if (
+      !(current.row + 2 >= maze.length) &&
+      !visited.has(getIndex({ row: current.row + 2, col: current.col }, maze))
+    ) {
+      options.push({ row: current.row + 2, col: current.col });
+    }
+    if (
+      !(current.col + 2 >= maze[current.row].length) &&
+      !visited.has(getIndex({ row: current.row, col: current.col + 2 }, maze))
+    ) {
+      options.push({ row: current.row, col: current.col + 2 });
+    }
+    //console.log(options);
+    var index = -1;
+    if(options.length !== 0) {
+      stack.push(current);
+      index = Math.floor(Math.random() * options.length);
+      const chosen = options[index];
+      maze[chosen.row + ((current.row - chosen.row)/2)][chosen.col + ((current.col - chosen.col)/2)] = 1;
+      visited.add(chosen.row * maze.length + chosen.col);
+      stack.push({ row: chosen.row, col: chosen.col});
+    }
+    /*for(let i = 0; i < options.length; i++) {
+      if(i !== index) {
+        stack.push(options[i]);
+      }
+    }
+    if(index !== -1) {
+      stack.push(options[index]);
+    }*/
+  }
   return maze;
 }
 
-function createCube(row, col, scene) {}
+function getIndex(position, maze) {
+  return position.row * maze.length + position.col;
+}
+
+function createCube(row, col, scene) {
+  const geometry = new THREE.BoxBufferGeometry(1, 1, 1);
+  const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
+  const mesh = new THREE.Mesh(geometry, material);
+  mesh.position.set(row-(size/2), 1, col-(size/2));
+  scene.add(mesh);
+}
 
 function loop(scene, camera, renderer) {
   renderer.render(scene, camera);
