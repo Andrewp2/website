@@ -36,7 +36,6 @@ function main() {
   const controls = new THREE.OrbitControls(camera, renderer.domElement);
 
   const maze = generateMaze();
-  console.log(maze);
   for (let row = 0; row < maze.length; row++) {
     for (let col = 0; col < maze[row].length; col++) {
       if (!maze[row][col]) {
@@ -88,7 +87,6 @@ function generateMaze() {
     ) {
       options.push({ row: current.row, col: current.col + 2 });
     }
-    //console.log(options);
     var index = -1;
     if(options.length !== 0) {
       stack.push(current);
@@ -98,14 +96,6 @@ function generateMaze() {
       visited.add(chosen.row * maze.length + chosen.col);
       stack.push({ row: chosen.row, col: chosen.col});
     }
-    /*for(let i = 0; i < options.length; i++) {
-      if(i !== index) {
-        stack.push(options[i]);
-      }
-    }
-    if(index !== -1) {
-      stack.push(options[index]);
-    }*/
   }
   return maze;
 }
