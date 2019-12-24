@@ -70,7 +70,6 @@ function main() {
 
 function onDocumentKeyDown(event) {
   const keyCode = event.which;
-  console.log(keyCode);
   if (keyCode === 87 || keyCode === 38) {
     if(maze[playerPosition.x][playerPosition.z-1]) {
       playerPosition.z -= 1;
