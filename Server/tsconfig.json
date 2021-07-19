@@ -6,8 +6,14 @@
     "outDir": "build",
     "esModuleInterop": true,
     "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/types/*.ts",
+    "node_modules",
+    ".vscode"
   ]
 }

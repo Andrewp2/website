@@ -8,7 +8,8 @@
     "serve": "nodemon",
     "lint": "npx eslint . --ext .ts,.tsx && prettier \"src/**/*.ts\"",
     "fix": "npx eslint . --ext .ts,.tsx --fix && prettier \"src/**/*.ts\" --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "main": "build/app.js",
   "author": "Andrew Peterson",
@@ -30,7 +31,12 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
   },
   "lint-staged": {
     "*.ts": [

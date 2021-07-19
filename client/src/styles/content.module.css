@@ -1,0 +1,21 @@
+/* content.css */
+.text {
+  padding: 50px;
+  font-family: "Inconsolata";
+  font-weight: 500;
+}
+
+.posts {
+  padding-top: 15px;
+  padding-left: 30px;
+  font-family: "Inconsolata";
+  font-weight: 500;
+}
+
+.blogtitle {
+  padding-top: 15px;
+  padding-left: 15px;
+  font-family: "Inconsolata";
+  font-weight: 700;
+  font-size: 50px;
+}
