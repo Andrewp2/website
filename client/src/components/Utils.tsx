@@ -19,8 +19,8 @@ export interface Props {
   isEmpty?: boolean;
 }
 
-export const markdownFiles: {slug: string}[] = importAll(require.context('../posts', false, /\.md$/)).sort();
+export const markdownFiles: {slug: string}[] = importAll(require.context('../../public/posts/', false, /\.md$/)).sort();
 export const posts: Promise<string[]> = Promise.all(markdownFiles.map(async (value) => {
-  const { default: url} = await import(`../posts/${value.slug}`);
+  const { default: url} = await import(`../../public/posts/${value.slug}`);
   return await fetch(url).then((file) => file.text());
 }));
