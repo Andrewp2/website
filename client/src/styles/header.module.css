@@ -4,7 +4,7 @@
   margin-bottom: 0px;
   padding: 15px;
   background: #001e46;
-  font-family: "Inconsolata";
+  font-family: 'Inconsolata';
 }
 
 .flexbox {
@@ -18,7 +18,7 @@
   align-items: flex-start;
 }
 
-.robot {
+.logo {
   height: 90px;
   width: 90px;
   padding-right: 30px;
@@ -36,7 +36,7 @@
   font-weight: 900;
   padding: 15px;
   font-size: 40px;
-  color: orange;
+  color: #66a36c;
   text-align: center;
   margin-left: auto;
   align-self: center;
@@ -45,7 +45,7 @@
 .links {
   white-space: nowrap;
   overflow: hidden;
-  border: 5px solid orange;
+  border: 5px solid #66a36c;
   font-size: 30px;
   padding: 5px;
   padding-left: 15px;
@@ -62,5 +62,5 @@
 
 a {
   text-decoration: none;
-  color: orange;
+  color: #66a36c;
 }

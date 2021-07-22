@@ -6,7 +6,8 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "react-hooks"
+        "react-hooks",
+        "prettier"
     ],
     "extends": [
         "plugin:react/recommended",
@@ -15,7 +16,9 @@
     "rules": {
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "semi": 0,
+        "no-console": 0
     },
     "settings": {
         "react": {
