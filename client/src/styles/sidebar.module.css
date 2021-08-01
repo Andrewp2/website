@@ -1,0 +1,6 @@
+/* sidebar.css */
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+}

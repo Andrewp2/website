@@ -2,6 +2,9 @@ import * as matter from 'gray-matter';
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import gfm from 'remark-gfm';
+import remarkMathPlugin from 'remark-math';
+import rehypeKatex from 'rehype-katex'
+import 'katex/dist/katex.min.css' // `rehype-katex` does not import the CSS for you
 import content from "../styles/content.module.css";
 import heading from "../styles/header.module.css";
 import "../styles/reset.module.css";
@@ -31,14 +34,11 @@ export const Content = (): JSX.Element => {
   );
 }
 
-
 const BlogPost = (props: Props): JSX.Element => {
-  return (
-    <div className={heading}>
-      <div> 
-        <h1 className={content.blogtitle}>{props.data.title as string}</h1>
-        <ReactMarkdown className={content.posts} remarkPlugins={[gfm]}>{props.content}</ReactMarkdown>
-      </div>
-    </div>
-  )
+      return (
+        <div className={content.blogtitle}>
+          <h1 className={content.blogtitle}>{props.data.title as string}</h1>
+          <ReactMarkdown className={content.posts} remarkPlugins={[gfm, remarkMathPlugin]} rehypePlugins={[rehypeKatex]} >{props.content}</ReactMarkdown>
+        </div>
+      );
 }
