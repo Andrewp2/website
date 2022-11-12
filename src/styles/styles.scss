@@ -44,16 +44,24 @@ a {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
     font-size: inherit;
     color: goldenrod;
-    margin-top: 2em;
-    margin-bottom: 1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
     text-align: left;
+}
+
+h2 {
+    font-size: inherit;
+    color: goldenrod;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-align: left;
+    margin-bottom: 1em;
 }
 
 code {
@@ -80,14 +88,14 @@ pre>code.hljs {
 /* Main Header */
 
 header[role="main"] {
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 1rem 0;
 
     a.title {
         color: #eee;
         text-decoration: none;
         font-weight: bold;
-        font-size: 150%;
-        text-shadow: 1px 1px 2px #000;
+        font-size: 200%;
+        text-shadow: 9px 9px 9px #000;
     }
 }
 
@@ -95,7 +103,7 @@ header[role="main"] {
 
 footer[role="main"] {
     margin-top: 5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     color: #666;
     text-shadow: 0 1px 2px #000;
 
@@ -131,6 +139,39 @@ article {
 
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
             0px 0px 20px rgba(218, 165, 32, 0.5);
+    }
+
+    h2 {
+        color: #888;
+        font-size: 150%;
+        line-height: 1.1;
+    }
+
+    h2 em {
+        text-decoration: none;
+        font-style: normal;
+        color: goldenrod;
+
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
+            0px 0px 20px rgba(218, 165, 32, 0.5);
+    }
+
+    table, th, td {
+        padding: 5px 5px 5px 5px;
+    }
+
+    table {
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+
+    th {
+        text-align: center;
+        padding: 5px 15px 5px 15px;
+    }
+
+    td {
+        border: 1px solid;
     }
 }
 
