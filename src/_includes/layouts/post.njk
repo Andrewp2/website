@@ -1,0 +1,14 @@
+---
+layout: layouts/root.njk
+---
+
+<article>
+  {{ comp.PostMeta(page.data) | safe }}
+
+  <h1>
+    <em>{{ title }}</em>
+    {{ subtitle }}
+  </h1>
+
+  {{ content | safe }}
+</article>

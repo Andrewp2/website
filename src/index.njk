@@ -1,0 +1,17 @@
+---
+title: hmans.co
+---
+
+<section class="post-index">
+  <ul>
+    {% for post in search.pages("type=post", "date=desc") %}
+      <li>
+        {{ comp.PostMeta(post.data) | safe }}
+        <div class="post-link">
+          <a href="{{ post.data.url  }}">{{ post.data.title }}</a>
+          {{ post.data.subtitle }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
