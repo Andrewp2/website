@@ -1,0 +1,13 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - curl -fsSL https://deno.land/x/install/install.sh | sh
+        - /root/.deno/bin/deno task build
+  artifacts:
+    baseDirectory: /_site
+    files:
+      - "**/*"
+  cache:
+    paths: []
