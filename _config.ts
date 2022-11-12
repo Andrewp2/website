@@ -31,4 +31,6 @@ site.copy("styles/code.css");
 
 site.copy("fonts");
 
+site.ignore("amplify.yml");
+
 export default site;
