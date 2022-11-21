@@ -1,7 +1,8 @@
 :root {
-    --color: #e2e2e2;
-    --light-color: #888;
-    --background-color: #2c2c2c;
+    --color: #FFFBCE;
+    --background-color: #142411;
+    --accent: #4DA346;
+    --bright: #F4FBF3;
 }
 
 @font-face {
@@ -20,6 +21,7 @@
 
 html {
     background-color: var(--background-color);
+    //background: linear-gradient(to right,rgba(100, 0, 0, 0.85), rgba(100, 100, 0, 0.85));
     color: var(--color);
     font: 19px/1.55 "Mona Sans", system-ui, sans-serif;
 
@@ -34,13 +36,13 @@ html {
 }
 
 body {
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
 a {
-    color: orange;
+    color: var(--accent);
 }
 
 h1,
@@ -49,7 +51,7 @@ h4,
 h5,
 h6 {
     font-size: inherit;
-    color: goldenrod;
+    color: var(--accent);
     margin-top: 0em;
     margin-bottom: 0em;
     text-align: left;
@@ -57,7 +59,7 @@ h6 {
 
 h2 {
     font-size: inherit;
-    color: goldenrod;
+    color: var(--accent);
     margin-top: 0em;
     margin-bottom: 0em;
     text-align: left;
@@ -65,7 +67,7 @@ h2 {
 }
 
 code {
-    color: #ddd;
+    color: var(--color);
     background-color: #444;
     font-size: 85%;
     padding: 2px 6px;
@@ -91,10 +93,10 @@ header[role="main"] {
     margin: 1rem 0 1rem 0;
 
     a.title {
-        color: #eee;
+        color: var(--bright);
         text-decoration: none;
         font-weight: bold;
-        font-size: 200%;
+        font-size: 300%;
         text-shadow: 9px 9px 9px #000;
     }
 }
@@ -104,7 +106,7 @@ header[role="main"] {
 footer[role="main"] {
     margin-top: 5rem;
     margin-bottom: 3rem;
-    color: #666;
+    color: var(--color);
     text-shadow: 0 1px 2px #000;
 
     a {
@@ -122,12 +124,12 @@ article {
     }
 
     em {
-        font-style: normal;
-        text-decoration: underline;
+        // font-style: normal;
+        // text-decoration: underline;
     }
 
     h1 {
-        color: #888;
+        color: var(--color);
         font-size: 200%;
         line-height: 1.1;
     }
@@ -135,10 +137,10 @@ article {
     h1 em {
         text-decoration: none;
         font-style: normal;
-        color: goldenrod;
+        color: var(--accent);
 
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
-            0px 0px 20px rgba(218, 165, 32, 0.5);
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
+            0px 0px 20px var(--accent);
     }
 
     h2 {
@@ -150,10 +152,10 @@ article {
     h2 em {
         text-decoration: none;
         font-style: normal;
-        color: goldenrod;
+        color: var(--accent);
 
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
-            0px 0px 20px rgba(218, 165, 32, 0.5);
+            0px 0px 20px var(--accent);
     }
 
     table, th, td {
@@ -205,7 +207,7 @@ section.post-index {
 div.post-meta {
     margin-bottom: 0.25rem;
 
-    color: var(--light-color);
+    color: var(--color);
 
     &+h1 {
         margin-top: 1rem;
@@ -232,13 +234,13 @@ a.tag {
     line-height: 1;
     text-decoration: none;
     color: var(--background-color);
-    background-color: var(--light-color);
+    background-color: var(--color);
 
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 
     transition: background-color 0.1s ease-out;
 
     &:hover {
-        background-color: #ddd;
+        background-color: var(--accent);
     }
 }

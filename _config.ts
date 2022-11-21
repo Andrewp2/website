@@ -32,6 +32,7 @@ site.copy("styles/code.css");
 site.copy("fonts");
 
 site.copy("images");
+site.copy("favicon.ico");
 
 site.ignore("amplify.yml");
 
