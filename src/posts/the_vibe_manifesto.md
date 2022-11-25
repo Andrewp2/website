@@ -10,31 +10,55 @@ Recently, I saw a [tweet](https://twitter.com/FreyaHolmer/status/159281113583285
 
 So, here are a list of things I vibe with:
 
-1. Emergence + Simulation
+### 1. Emergence + Simulation
 
-Emergence through the simulation of simple rules (navier-stokes, rendering equation) is super dope.
+> Emergence through the simulation of simple rules (navier-stokes, rendering equation, game of life, etc) is super dope.
 
-2. Player has between 3-7 choices for any meaningful decision
+### 2. Player has between 3-7 choices for any meaningful decision
 
-If you have 1 choice, it's not a decision. 2 is too simple, too binary. 8 and above are too many for someone to consider at once.
+> If you have 1 choice, it's not a decision. 2 is too simple, too binary. 8 and above are too many for someone to consider at once.
 
-3. Strategy over reflexes
+### 3. Strategy over reflexes<a href="#[2]"><sup>[2]</sup></a>
 
-```
-code
-```
+> I like to think that I will continue playing and enjoying video games for the rest of my life. It would suck to build kick-ass games, only to be able to really enjoy them for the next 5-10 years because your reflexes are just slightly too slow now to be good at the games you made. It's not inclusive to build games that heavily rely on reflexes.
 
-4. Games have meanings - they say things
+### 4. Games have meanings - they say things
 
-5. Photorealism and X-bit retro are out
+> Seems like an obvious thing to say, but games are a form of communication. Games that are aware of what they're communicating are much more exciting and interesting than those that just use mechanics for fun. Ultimately, games are capable of so many more emotions than the raw feel of fun, and it's about time game designers started exploring that larger space.
 
-6. Procedural generation is not enough
+### 5. Photorealism and X-bit retro are out
 
-7. Games aren't meant to be played forever
+> I see two types of styles too often - AAA games want to be photorealistic, and indies want to be 8/16/32-bit retro.
 
-8. Get your players consent
+> Both of these styles kinda suck. In photorealism there's just no room for expression or feeling in your world. Everything is exactly what it is, and it's just super boring. It screams "designed by committee". Check out [this Errant Signal video](https://www.youtube.com/watch?v=FRTsl1jCqq8) for more on the issues with photorealism.
 
-9. Design with and for interactivity
+> "Retro" styles also aren't very good (excluding PS1-style games, which are still in right now). It's hard to tell what's going on when everything is so blocky. It's also hard to portray faces. For example, I really don't like the faces in Stardew Valley, they just look off. But the faces in Celeste look great, because the game doesn't feel the need to stick to that X-bit aesthetic for the entire game. It also feels like indies pick this because they think it's going to be easier - and usually it's both harder and looks worse.
 
+### 6. Procedural generation is not enough
+
+> You cannot make a game interesting by *just* adding procedural generation. A lot of indies are using procedural generation extensively because it seems to add a lot of potential for new content, but I'm not super impressed. Maybe this is a little hypocritical of me because many of my favorite games (Minecraft, Factorio, Spelunky, the Civilization series, etc.) feature procedural generation prominently. I just think it's overused, and gamers will appreciate good level design if you give it to them, rather than the amorphous mish-mash that these algorithms are generating. Even in games that have a lot of procedural generation, the most memorable parts of the experience aren't the randomly generated ones.
+
+### 7. Games aren't meant to be played forever
+
+> Partially based off the 6th item, this strange fascination with "forever games" needs to stop. This includes roguelike indies, but also the much more insidious "live-service" games that are a stain on the industry.
+
+> Forever games can never have a satisfying conclusion, because they aren't designed to conclude. There's no moral, and no place for reflection. Their stories are unchanging and boring, because if the story did fundamentally change you would open yourself to the possibility of the game ending. Forever games don't care about the player and their life. They are vampires that continually steal time (and money) from their player's life, making them weaker in the real world. As they become weaker and weaker (less social, less physically fit, poorer) they spend more and more time in the game world rather than in the real world, further perpetuating the cycle. 
+
+> Good games are designed to be put down, and for the player to return back to the tasks they need to do in the real world. Whether that's working a job, socializing with friends and family, exercising, and all of the other things that are required to live a full life. Good video games actually *enhance* those outside activities, because of the lessons taught within the game. 
+
+### 8. Get your players consent
+
+> Good games get their players consent. Most games I see do this well for the large things (content warnings and the like) but sometimes they miss it on small things. For example, [why do so many games start with a cutscene](https://www.reddit.com/r/pcgaming/comments/pq3mq7/developers_please_stop_skipping_the_main_menu_on/), before I've had the chance to change the settings to my liking? Now I'm sitting here watching this cutscene but all I'm thinking about is how I need to turn motion blur off before it gives me a headache.
+
+### 9. Design *with* and *for* interactivity
+
+> Talking about *with* first, with interactivity means using development tools that allow you to be interactive with the game as it's running. I really value REPLs and other tools that allow you to modify the game as it's running. I've been looking into adding a LISP interpreter in my game for exactly this reason.
+
+> *For* interactivity comes back to "Emergence + Simulation", that is I want games to be interaction focused, and not choose-your-own-adventure books. Games are interesting as a medium because of interactivity.
+
+
+---
 
 <a id="[1]">[1]</a> The biggest issue I see with many game definitions is that they exclude "walking-sim" type games like <em>What remains of Edith Finch</em>. The problem is not necessarily that I want to label these interactive experiences with the label of "game", but more that as a game designer I am interested in the storytelling and mechanics used in this software. In other words, if <em>What remains of Edith Finch</em> isn't a game then I don't want to just be a **game** designer, I want to be an **interactive experience** designer, which includes and subsumes games. Now, I may exclusively make interactive experiences that also happen to be games, but when studying the art of making games I am still very much interested in interactive experiences that aren't games, and therefore walking-sims are still part of my game design curriculum.
+
+<a id="[2]">[2]</a> Fast games aren't necessarily reflex heavy - it depends on what is required. Older people can play piano because it doesn't require reflexes, just a level of mobility that (with good health) can be maintained even into old age. It's more of the "peek around a corner and instantly spot the pixels that constitute the enemy and click on them" sort of reflex that I don't like.
