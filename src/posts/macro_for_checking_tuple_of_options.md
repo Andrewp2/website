@@ -1,7 +1,7 @@
 ---
 title: Macro for checking tuple of options
 subtitle:
-tags: [rustLang, programming, development]
+tags: [rust_lang, programming, software_engineering]
 ---
 
 Today, I was programming and ran into a little issue. Before, I was using this macro (from [here](https://stackoverflow.com/a/40986547/10516390)):

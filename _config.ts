@@ -5,7 +5,7 @@ import date from "lume/plugins/date.ts";
 import inline from "lume/plugins/inline.ts";
 import minify_html from "lume/plugins/minify_html.ts";
 import code_highlight from "lume/plugins/code_highlight.ts";
-import mdx from "https://raw.githubusercontent.com/lumeland/lume/master/plugins/mdx.ts";
+import mdx from "lume/plugins/mdx.ts";
 import jsx from "lume/plugins/jsx.ts";
 
 const site = lume({

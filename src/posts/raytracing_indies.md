@@ -1,7 +1,7 @@
 ---
 title: What raytracing will change for indies
 subtitle: and why you should care
-tags: [raytracing, gameDev]
+tags: [raytracing, game_development]
 ---
 
 Over the past year, I've been watching the development of raytracing technology. With the latest graphics cards from Nvidia, AMD, and even Intel, it's looking more and more likely that real-time raytracing could become the new standard in terms of graphics technology. I think this news has some people dishearted - there are several reasons why it's frustrating.
