@@ -44,24 +44,19 @@ So, here are a list of things I vibe with:
 > capable of so many more emotions than the raw feel of fun, and it's about time
 > game designers started exploring that larger space.
 
-### 5. Photorealism and X-bit retro are out
+### 5. Photorealism is bad
 
-> I see two types of styles too often - AAA games want to be photorealistic, and
-> indies want to be 8/16/32-bit retro.
+> Photorealism is a bad style for a video game. The first issue with
+> photorealism is that it doesn't clarify which objects are interactable and which
+> ones aren't. Time and time again I have tried to open a door that was just a texture
+> or to break a wooden object that isn't breakable. Games that use stylistic rendering
+> are less restricted in their use of visual design to guide players.
 
-> Both of these styles kinda suck. In photorealism there's just no room for
-> expression or feeling in your world. Everything is exactly what it is, and
-> it's just super boring. It screams "designed by committee". Check out
-> [this Errant Signal video](https://www.youtube.com/watch?v=FRTsl1jCqq8) for
-> more on the issues with photorealism.
+> The second issue is that photorealistic games can't use powerful techniques to
+> control emotion, like color grading.
 
-> "Retro" styles also aren't very good (excluding PS1-style games, which are
-> still in right now). It's hard to tell what's going on when everything is so
-> blocky. It's also hard to portray faces. For example, I really don't like the
-> faces in Stardew Valley, they just look off. But the faces in Celeste look
-> great, because the game doesn't feel the need to stick to that X-bit aesthetic
-> for the entire game. It also feels like indies pick this because they think
-> it's going to be easier - and usually it's both harder and looks worse.
+> Overall, photorealism is a trap for game developers/studios/engines, and it isn't a target
+> worth aiming for in the first place.
 
 ### 6. Procedural generation is not enough
 
@@ -70,9 +65,8 @@ So, here are a list of things I vibe with:
 > add a lot of potential for new content, but I'm not super impressed. Maybe
 > this is a little hypocritical of me because many of my favorite games
 > (Minecraft, Factorio, Spelunky, the Civilization series, etc.) feature
-> procedural generation prominently. I just think it's overused, and gamers will
-> appreciate good level design if you give it to them, rather than the amorphous
-> mish-mash that these algorithms are generating. Even in games that have a lot
+> procedural generation prominently. I just think it's overused and that gamers will
+> appreciate good level design if you give it to them. Even in games that have a lot
 > of procedural generation, the most memorable parts of the experience aren't
 > the randomly generated ones.
 
